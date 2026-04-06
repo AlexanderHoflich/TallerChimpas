@@ -1,0 +1,47 @@
+/* Estilos personalizados */
+.custom-nav {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-nav .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.custom-nav .navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.custom-carousel {
+    height: 400px;
+}
+
+.custom-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.enlaces {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.enlaces:hover {
+    text-decoration: underline;
+}
+
+.transparent-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.transparent-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #007bff;
+    color: #000;
+}
+
+.cart {
+    margin: 10px;
+}
