@@ -185,19 +185,6 @@ footer.bg-dark {
     color: #fff;
 }
 
-.social-link-whatsapp {
-    border-color: var(--color-whatsapp);
-    background-color: var(--color-whatsapp);
-    text-decoration: none;
-}
-
-.social-link-whatsapp:hover,
-.social-link-whatsapp:focus-visible {
-    border-color: var(--color-whatsapp-dark);
-    background-color: var(--color-whatsapp-dark);
-    color: #fff;
-}
-
 .link-warning {
     color: #ff0000 !important;
 }
