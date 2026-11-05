@@ -71,8 +71,7 @@ footer .brand-name {
     text-shadow: 0 1px 3px #000;
 }
 
-.btn-whatsapp,
-.float-reserve-btn {
+.btn-whatsapp {
     background-color: var(--color-whatsapp);
     border-color: var(--color-whatsapp);
     color: #fff;
@@ -80,10 +79,7 @@ footer .brand-name {
 
 .btn-whatsapp:hover,
 .btn-whatsapp:focus-visible,
-.btn-whatsapp:active,
-.float-reserve-btn:hover,
-.float-reserve-btn:focus-visible,
-.float-reserve-btn:active {
+.btn-whatsapp:active {
     background-color: var(--color-whatsapp-dark);
     border-color: var(--color-whatsapp-dark);
     color: #fff;
@@ -150,19 +146,47 @@ footer .brand-name {
     object-fit: cover;
 }
 
-.float-reserve-btn {
+.floating-social-links {
     position: fixed;
     right: max(24px, env(safe-area-inset-right));
     bottom: max(24px, env(safe-area-inset-bottom));
     z-index: 1050;
-    display: inline-flex;
-    width: 64px;
-    height: 64px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0;
-    border-radius: 50%;
+    gap: 0.75rem;
+}
+
+.floating-social-link {
+    background-color: #fff;
+    border-color: #000;
+    color: #111;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+    transition: none;
+}
+
+.floating-whatsapp-icon {
+    color: #25d366;
+}
+
+.floating-facebook-icon {
+    color: #1877f2;
+}
+
+.floating-tiktok-icon {
+    color: #000;
+    filter: drop-shadow(1px 0 #25f4ee) drop-shadow(-1px 0 #fe2c55);
+}
+
+a.social-link {
+    text-decoration: none;
+}
+
+a.social-link:not(.floating-social-link):hover,
+a.social-link:not(.floating-social-link):focus-visible {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 footer.bg-dark {
@@ -197,4 +221,5 @@ footer.bg-dark {
     #servicios .card:hover {
         transform: none;
     }
+
 }
